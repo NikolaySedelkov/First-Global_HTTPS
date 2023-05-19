@@ -46,4 +46,6 @@ void show_vector(vector mas) {
 int main()
 {
     vector mas = init_vector(4);
+    show_vector(mas);
+    resizeUp_vector(&mas, 7);
 }
