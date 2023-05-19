@@ -32,7 +32,26 @@ void resizeUp_vector(vector* mas, unsigned int size) {
         mas->array[i] = tmp[i];
     }
 
-    mas->size += 1;
+    mas->size = size;
+
+    delete[] tmp;
+}
+
+void resizeDown_vector(vector* mas, unsigned int size) {
+    int* tmp = new int[size];
+
+    for (unsigned int i = 0; i < size; ++i) {
+        tmp[i] = mas->array[i];
+    }
+
+    delete[] mas->array;
+    mas->array = new int[size];
+
+    for (unsigned int i = 0; i < size; ++i) {
+        mas->array[i] = tmp[i];
+    }
+
+    mas->size = size;
 
     delete[] tmp;
 }
