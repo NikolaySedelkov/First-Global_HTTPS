@@ -37,6 +37,15 @@ void resizeUp_vector(vector* mas, unsigned int size) {
     delete[] tmp;
 }
 
+int sum_vector(vector mas) {
+    int sum = 0;
+    for (unsigned int i = 0; i < mas.size; ++i) {
+        sum += mas.array[i];
+    }
+
+    return sum;
+}
+
 void show_vector(vector mas) {
     for (unsigned int i = 0; i < mas.size; ++i) {
         cout << mas.array[i] << ' ';
