@@ -37,6 +37,12 @@ void resizeUp_vector(vector* mas, unsigned int size) {
     delete[] tmp;
 }
 
+void show_vector(vector mas) {
+    for (unsigned int i = 0; i < mas.size; ++i) {
+        cout << mas.array[i] << ' ';
+    }
+}
+
 int main()
 {
     vector mas = init_vector(4);
