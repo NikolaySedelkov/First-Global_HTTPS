@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#define ARRAY SIZE 6
 
 using namespace std;
 
