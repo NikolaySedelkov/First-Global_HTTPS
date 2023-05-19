@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #define ARRAY SIZE 6
+#define BUFFER_SIZE 256
 
 using namespace std;
 
